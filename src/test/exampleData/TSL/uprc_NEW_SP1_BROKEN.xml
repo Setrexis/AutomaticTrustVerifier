@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<TrustServiceStatusList xmlns="http://uri.etsi.org/02231/v2#" Id="TrustServiceStatusList-1"
+                        TSLTag="http://uri.etsi.org/19612/TSLTag">
+    <SchemeInformation>
+        <TSLVersionIdentifier>5</TSLVersionIdentifier>
+        <TSLSequenceNumber>62</TSLSequenceNumber>
+        <TSLType>http://uri.etsi.org/TrstSvc/TrustedList/TSLType/EUgeneric</TSLType>
+        <SchemeOperatorName>
+            <Name xml:lang="en">FANTASY Test</Name>
+        </SchemeOperatorName>
+        <SchemeOperatorAddress>
+            <PostalAddresses>
+                <PostalAddress xml:lang="en">
+                    <StreetAddress>TestAddr. 44</StreetAddress>
+                    <Locality>Test</Locality>
+                    <PostalCode>12356</PostalCode>
+                    <CountryName>EL</CountryName>
+                </PostalAddress>
+            </PostalAddresses>
+            <ElectronicAddress>
+                <URI xml:lang="en">mailto:info@peppol.eu</URI>
+                <URI xml:lang="en">http://www.peppol.eu/</URI>
+            </ElectronicAddress>
+        </SchemeOperatorAddress>
+        <SchemeName>
+            <Name xml:lang="en">GR:Trusted list including information related to the qualified trust service providers
+                which are supervised by the issuing Member State, together with information related to the qualified
+                trust services provided by them, in accordance with the relevant provisions laid down in Regulation (EU)
+                No 910/2014 of the European Parliament and of the Council of 23 July 2014 on electronic identification
+                and trust services for electronic transactions in the internal market and repealing Directive
+                1999/93/EC.
+            </Name>
+        </SchemeName>
+        <StatusDeterminationApproach>http://uri.etsi.org/TrstSvc/TrustedList/StatusDetn/EUappropriate
+        </StatusDeterminationApproach>
+        <SchemeTypeCommunityRules>
+            <URI xml:lang="en">http://uri.etsi.org/TrstSvc/TrustedList/schemerules/EUcommon</URI>
+            <URI xml:lang="en">http://uri.etsi.org/TrstSvc/TrustedList/schemerules/EL</URI>
+        </SchemeTypeCommunityRules>
+        <SchemeTerritory>EL</SchemeTerritory>
+        <PolicyOrLegalNotice>
+            <TSLLegalNotice xml:lang="en">The applicable legal framework for the present trusted list is Regulation (EU)
+                No 910/2014 of the European Parliament and of the Council of 23 July 2014 on electronic identification
+                and trust services for electronic transactions in the internal market and repealing Directive
+                1999/93/EC.
+            </TSLLegalNotice>
+        </PolicyOrLegalNotice>
+        <HistoricalInformationPeriod>65535</HistoricalInformationPeriod>
+        <ListIssueDateTime>2019-09-05T01:00:00Z</ListIssueDateTime>
+        <NextUpdate>
+            <dateTime>2029-05-05T00:00:00Z</dateTime>
+        </NextUpdate>
+        <DistributionPoints>
+            <URI>https://www.peppol.eu/test_dist</URI>
+        </DistributionPoints>
+    </SchemeInformation>
+    <TrustServiceProviderList>
+        <TrustServiceProvider>
+            <TSPInformation>
+                <TSPName>
+                    <Name xml:lang="el">PEPPOL</Name>
+                    <Name xml:lang="en">PEPPOL</Name>
+                </TSPName>
+                <TSPTradeName>
+                    <Name xml:lang="en">TEST-1337</Name>
+                    <Name xml:lang="en">TEST-1</Name>
+                </TSPTradeName>
+                <TSPAddress>
+                    <PostalAddresses>
+                        <PostalAddress xml:lang="en">
+                            <StreetAddress>TestStreet. 33</StreetAddress>
+                            <Locality>Test</Locality>
+                            <PostalCode>123456</PostalCode>
+                            <CountryName>EL</CountryName>
+                        </PostalAddress>
+                    </PostalAddresses>
+                    <ElectronicAddress>
+                        <URI xml:lang="en">https://www.pki.peppol.eu</URI>
+                        <URI xml:lang="en">mailto:support@peppol.eu</URI>
+                    </ElectronicAddress>
+                </TSPAddress>
+                <TSPInformationURI>
+                    <URI xml:lang="en">https://www.pki.peppol.eu/</URI>
+                </TSPInformationURI>
+            </TSPInformation>
+            <TSPServices>
+                <!-- NEW SUBCA CERT -->
+                <TSPService>
+                    <ServiceInformation>
+                        <ServiceTypeIdentifier>http://uri.etsi.org/TrstSvc/Svctype/TSA/QTST</ServiceTypeIdentifier>
+                        <ServiceName>
+                            <Name xml:lang="en">PEPPOL SP SubCA</Name>
+                            <Name xml:lang="el">PEPPOL SP SubCA</Name>
+                        </ServiceName>
+                        <ServiceDigitalIdentity>
+                            <DigitalId>
+                                <X509Certificate>MIIDoDCCAoigAwIBAgIQdvXttqfs0wlER7cYhstkXzANBgkqhkiG9w0BAQ0FADA3
+                                    MQswCQYDVQQGEwJHUjEPMA0GA1UECgwGUEVQUE9MMRcwFQYDVQQDDA5QRVBQT0wg
+                                    Um9vdCBDQTAeFw0xOTEwMDExNTM5MzJaFw0yMjA5MTUxNTM5MzJaMDgxCzAJBgNV
+                                    BAYTAkdSMQ8wDQYDVQQKDAZQRVBQT0wxGDAWBgNVBAMMD1BFUFBPTCBTUCBTdWJD
+                                    QTCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBALrSeDzHqbfWF1w28Wqf
+                                    efhtIyJ6P+QgkF4gBZhv3e5oIbb7Hy4OSwsk3Z53bsinPOKu1kTvAa1vwb6aTbRJ
+                                    dsaQ/bS52w91EdCbWtowNcXg/D1JCTiOpaUKG5rkPlui3d1optDZhnOjrW7q5HI1
+                                    SWlvrxDgArMyJQnk8/cGMJZ3/aBF+tQl9k3CksuI3cVbTQtJ0OG6BlUhKK1i3mIU
+                                    BeiR2wKh3PeYMOq6YZvrcq7QBPo4NMg/4Xnohwsac+TX8eiHF7NJmzccgHmR1XXQ
+                                    uwArtIbvLkQetWCHbUgj8SS4xSQf1uNjO09AaeWuOOvy/zJv6La885nnSkpgVako
+                                    yNUCAwEAAaOBpjCBozAMBgNVHRMEBTADAQH/MB0GA1UdDgQWBBQwFd42EhdQTs3h
+                                    nPRL2znNOWMjbjBnBgNVHSMEYDBegBRN0uvKLfeGs7GHgyONchtILWe8xaE7pDkw
+                                    NzELMAkGA1UEBhMCR1IxDzANBgNVBAoMBlBFUFBPTDEXMBUGA1UEAwwOUEVQUE9M
+                                    IFJvb3QgQ0GCCQCaeo9KaT5SJjALBgNVHQ8EBAMCAQYwDQYJKoZIhvcNAQENBQAD
+                                    ggEBAKVUULqr3dIRxzUVpRLiMkI9TCF+fwl/1azmi115gO0UiXJ5cMOkVAN/4DbL
+                                    Cly+0M9uHyXM5zF7gTeOcLlDCvIuiOtZgOALezQ8RWYU+Zv4+ixnoAMTw+OwLR9D
+                                    4uXb6uTqrQW1VYtkRI/hOsaWb3kfIKzke3B8qsqDJcbDY+q44nGuxAXM/uNyb6Ao
+                                    CPBoY4JIA1ZYkmjW7Brc7LJ7OK8uKpq/J+QSxqR+XcJHpgUZLZjUDEmnyCABsrw9
+                                    UcTJ3t1Mm8f2SsZ57v4gpEE9wcw0P1n5AKDhNQ06IRwErzjcZHLOmxzkMuPx29d0
+                                    7vQ6HiztNeie+rozdNi7QdXDMuk=
+                                </X509Certificate>
+                                <X509SubjectName>CN=PEPPOL SP SubCA,O=PEPPOL,C=GR</X509SubjectName>
+                            </DigitalId>
+                        </ServiceDigitalIdentity>
+                        <ServiceStatus>http://uri.etsi.org/TrstSvc/TrustedList/Svcstatus/granted</ServiceStatus>
+                        <StatusStartingTime>2016-09-05T22:00:01Z</StatusStartingTime>
+                    </ServiceInformation>
+                </TSPService>
+            </TSPServices>
+        </TrustServiceProvider>
+    </TrustServiceProviderList>
+    <ds:Signature xmlns:ds="http://www.w3.org/2000/09/xmldsig#" Id="id-19a60a6a59d4f1da95cc363faa51584f">
+        <ds:SignedInfo>
+            <ds:CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/>
+            <ds:SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/>
+            <ds:Reference Id="r-id-19a60a6a59d4f1da95cc363faa51584f-1" URI="">
+                <ds:Transforms>
+                    <ds:Transform Algorithm="http://www.w3.org/TR/1999/REC-xpath-19991116">
+                        <ds:XPath>not(ancestor-or-self::ds:Signature)</ds:XPath>
+                    </ds:Transform>
+                    <ds:Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/>
+                </ds:Transforms>
+                <ds:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/>
+                <ds:DigestValue>
+                    duUnhsmebq5p9wW4yQlCvJ3qG18d/dxH4QDnlfw5Hx1ERQQGdWgHpF4A2QeIub+b1HCmPut8nrkwRUcLa64FAg==
+                </ds:DigestValue>
+            </ds:Reference>
+            <ds:Reference Type="http://uri.etsi.org/01903#SignedProperties"
+                          URI="#xades-id-19a60a6a59d4f1da95cc363faa51584f">
+                <ds:Transforms>
+                    <ds:Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/>
+                </ds:Transforms>
+                <ds:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/>
+                <ds:DigestValue>
+                    y24euyDwhekZm3tAvSAMkfZce9y8ps9Xsp5bwexXkKWNVYBDKr2evPyKETZT2X0WLWBR9zj7F+y3xnx1EgSSWg==
+                </ds:DigestValue>
+            </ds:Reference>
+        </ds:SignedInfo>
+        <ds:SignatureValue Id="value-id-19a60a6a59d4f1da95cc363faa51584f">
+            K3XJ5/Bt6HTz+0zEIXtbA9V64BwjDb+2/CJXzsJTGDCuoRNdCVuEHEX1PTcezDVBmyboV/NbUMoBCsxo23GdYuIBPvIRDM/pZgMZcXsbIYWtRaMWtxAujM074tTqyd0hTYEp4taS6XcQjfL91FWrYXUdR5kzCkSPe8buna/VImPJd7jNZnQidCJnUQLgJaku0RjZUak2Tjzl/jk21B21Pe94hwLIBdR1VZDJrFclz0dzYm69qyoNiiFbYmp2nzLqttJm1EtJn8zA8JV4jBL2s9m104e1h1CQZ10vDP2cOew/4DkZybJiA2qkp8pEK9DhwaQMHZ2ZIiVw9Lh/8QYrUA==
+        </ds:SignatureValue>
+        <ds:KeyInfo>
+            <ds:X509Data>
+                <ds:X509Certificate>
+                    MIIDmDCCAoCgAwIBAgIJAJp6j0ppPlImMA0GCSqGSIb3DQEBDQUAMDcxCzAJBgNVBAYTAkdSMQ8wDQYDVQQKDAZQRVBQT0wxFzAVBgNVBAMMDlBFUFBPTCBSb290IENBMB4XDTE5MTAwMTE1MzU0M1oXDTI5MDkyODE1MzU0M1owNzELMAkGA1UEBhMCR1IxDzANBgNVBAoMBlBFUFBPTDEXMBUGA1UEAwwOUEVQUE9MIFJvb3QgQ0EwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQDDNY7pd7IzvGsg9OIP9+bkisWovmHWp/dKiUMsSN0QrhltZzoZQb2r3Hkb71iA/qL6S/JBZ65BHg+HYwPJ7tn/kYWtKAIr7oNDMc+eaKjLL9CD0IOR35UcrCI4G+Pf8NBAht7aJCfFSVfxq03vkJ3F4fQaXVPyggYLKxw4mHBNvG4EsFno22PqTdRDDmo0Q4OjhvdtFYvi6a5EkzNuqOE6I8oUw3HGJwvIKzhNkY0bYFlVepzYGzqxk9xtd1mckwk2yUMDMYiWFquUrx7B7krk5UhW29xpCu301qZGawjXWL9w2qZDgZ/GWJcMOv8l/Nj7xw1iYveCN7Oyw8+JxeCJAgMBAAGjgaYwgaMwHQYDVR0OBBYEFE3S68ot94azsYeDI41yG0gtZ7zFMGcGA1UdIwRgMF6AFE3S68ot94azsYeDI41yG0gtZ7zFoTukOTA3MQswCQYDVQQGEwJHUjEPMA0GA1UECgwGUEVQUE9MMRcwFQYDVQQDDA5QRVBQT0wgUm9vdCBDQYIJAJp6j0ppPlImMAwGA1UdEwQFMAMBAf8wCwYDVR0PBAQDAgEGMA0GCSqGSIb3DQEBDQUAA4IBAQCE3+RePXpqK6VnlfpFRxHDr1lxqYE1iUDKjaGM2Dx00e6QOZfVhT/w8btchd1O7Uh9HuVdTrPQuGIf2DbAvpgiofuojonvnNl5uwMo/yaEOmmxOooekKQIl8xZ3+9/mGy/WMGqjm1twcK1hzMhf1Cup88wPdANE0ZnuMgQF6+HIiF8qW7StWIlAui9LTBYqoVenYVxs+YEwiAjIqRumXhn+Mpgzu1tNkz096F4DuDTZfmJ4GPQ4N6jA3Bozz+sQPEECB7pBoHEBxLqHglqzvntknCAr3t9rb61ZFXHHSGBOmhSHKuQj/zFR8mSVaMlj+VGyFwJU+e6Zf9hrB2WrnWc
+                </ds:X509Certificate>
+            </ds:X509Data>
+        </ds:KeyInfo>
+        <ds:Object>
+            <xades:QualifyingProperties xmlns:xades="http://uri.etsi.org/01903/v1.3.2#"
+                                        Target="#id-19a60a6a59d4f1da95cc363faa51584f">
+                <xades:SignedProperties Id="xades-id-19a60a6a59d4f1da95cc363faa51584f">
+                    <xades:SignedSignatureProperties>
+                        <xades:SigningTime>2019-10-09T08:24:23Z</xades:SigningTime>
+                        <xades:SigningCertificateV2>
+                            <xades:Cert>
+                                <xades:CertDigest>
+                                    <ds:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/>
+                                    <ds:DigestValue>
+                                        myEK87BbICAqrFANqEzFAR6nZunJ5uE22Cvs5BHF9z8joYSBJeMOwCbd1duI8vF7Li1a+SW25+rgbfNhpy24DA==
+                                    </ds:DigestValue>
+                                </xades:CertDigest>
+                                <xades:IssuerSerialV2>
+                                    MEgwO6Q5MDcxCzAJBgNVBAYTAkdSMQ8wDQYDVQQKDAZQRVBQT0wxFzAVBgNVBAMMDlBFUFBPTCBSb290IENBAgkAmnqPSmk+UiY=
+                                </xades:IssuerSerialV2>
+                            </xades:Cert>
+                        </xades:SigningCertificateV2>
+                        <xades:SignaturePolicyIdentifier>
+                            <xades:SignaturePolicyImplied/>
+                        </xades:SignaturePolicyIdentifier>
+                        <xades:SignatureProductionPlaceV2/>
+                    </xades:SignedSignatureProperties>
+                    <xades:SignedDataObjectProperties>
+                        <xades:DataObjectFormat ObjectReference="#r-id-19a60a6a59d4f1da95cc363faa51584f-1">
+                            <xades:MimeType>text/xml</xades:MimeType>
+                        </xades:DataObjectFormat>
+                    </xades:SignedDataObjectProperties>
+                </xades:SignedProperties>
+            </xades:QualifyingProperties>
+        </ds:Object>
+    </ds:Signature>
+</TrustServiceStatusList>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<form format="pumpkinSeedOil">
+
+    <purchaser>
+        <name>John Doe</name>
+        <street>Dartmouth St.</street>
+        <city>Midfarthington</city>
+        <country>England</country>
+    </purchaser>
+
+    <item_id>54678</item_id>
+    <amount>7</amount>
+
+</form>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<TrustServiceStatusList xmlns="http://uri.etsi.org/02231/v2#" xmlns:ns2="http://www.w3.org/2000/09/xmldsig#" xmlns:ns3="http://uri.etsi.org/01903/v1.3.2#" xmlns:ns4="http://uri.etsi.org/02231/v2/additionaltypes#" xmlns:ns5="http://uri.etsi.org/TrstSvc/SvcInfoExt/eSigDir-1999-93-EC-TrustedList/#" xmlns:ns6="http://uri.etsi.org/01903/v1.4.1#" TSLTag="http://uri.etsi.org/19612/TSLTag">
+    <SchemeInformation>
+        <TSLVersionIdentifier>5</TSLVersionIdentifier>
+        <TSLSequenceNumber>1</TSLSequenceNumber>
+        <TSLType>http://uri.etsi.org/TrstSvc/TrustedList/TSLType/EUgeneric</TSLType>
+        <SchemeOperatorName>
+            <Name xml:lang="en">UNHCR DAFI</Name>
+        </SchemeOperatorName>
+        <SchemeOperatorAddress>
+            <PostalAddresses>
+                <PostalAddress xml:lang="en">
+                    <Locality>Copenhagen</Locality>
+                    <PostalCode>111111</PostalCode>
+                    <CountryName>DN</CountryName>
+                </PostalAddress>
+            </PostalAddresses>
+            <ElectronicAddress>
+                <URI xml:lang="en">mailto:alice@TrustSchemeUNHCRdafi.example.com</URI>
+                <URI xml:lang="en">https://TrustSchemeUNHCRdafi.example.com/Servicemenu/English</URI>
+            </ElectronicAddress>
+        </SchemeOperatorAddress>
+        <SchemeName>
+            <Name xml:lang="en"> Trust Scheme UNHCR Example: Trusted list including information related to the qualified trust service providers which are supervised by UNHCR DAFI.</Name>
+        </SchemeName>
+        <SchemeInformationURI>
+            <URI xml:lang="en">https://TrustSchemeUNHCRdafi.example.com/en/tsl_e.htm</URI>
+        </SchemeInformationURI>
+        <SchemeTypeCommunityRules>
+            <URI xml:lang="en">https://TrustSchemeUNHCRdafi.example.com/en/schemerules.xml</URI>
+        </SchemeTypeCommunityRules>
+        <SchemeTerritory>UNHCR global</SchemeTerritory>
+        <PolicyOrLegalNotice>
+            <TSLLegalNotice xml:lang="en">The applicable legal framework for the present trusted list is UNHCR DAFI Regulation  No ??.</TSLLegalNotice>
+        </PolicyOrLegalNotice>
+        <HistoricalInformationPeriod>65535</HistoricalInformationPeriod>		
+        <ListIssueDateTime>2019-01-01T00:00:00Z</ListIssueDateTime>
+        <NextUpdate>
+            <dateTime>2021-01-01T00:00:00Z</dateTime>
+        </NextUpdate>
+        <DistributionPoints>
+            <URI>https://TrustSchemeUNHCRdafi.example.com/trust-list.xml</URI>
+        </DistributionPoints>
+    </SchemeInformation>
+    <TrustServiceProviderList>
+        <TrustServiceProvider>
+            <TSPInformation>
+                <TSPName>
+                    <Name xml:lang="en">Notary Bob</Name>
+                </TSPName>
+                <TSPTradeName>
+                    <Name xml:lang="en">VAT-11111111</Name>
+                </TSPTradeName>
+                <TSPAddress>
+                    <PostalAddresses>
+                        <PostalAddress xml:lang="en">
+                            <Locality>Copenhagen</Locality>
+							<PostalCode>111111</PostalCode>
+							<CountryName>DN</CountryName>
+                        </PostalAddress>
+                    </PostalAddresses>
+                    <ElectronicAddress>
+                        <URI xml:lang="en">https://www.notary-Bob.example.com/en/</URI>
+						<URI xml:lang="en">mailto:info@notary-bob.example.com</URI>
+                    </ElectronicAddress>
+                </TSPAddress>
+                <TSPInformationURI>
+                    <URI xml:lang="en">https://www.notary-bob.example.com/en/info</URI>
+                </TSPInformationURI>
+            </TSPInformation>
+            <TSPServices>
+                <TSPService>
+                    <ServiceInformation>
+                        <ServiceTypeIdentifier>http://TrustSchemeUNHCRdafi.example.com/ServiceTypes/thirdparties/</ServiceTypeIdentifier>
+                        <ServiceName>
+                            <Name xml:lang="en">UNHCR DAFI DEMO</Name>
+                        </ServiceName>
+                        <ServiceDigitalIdentity>
+                            <DigitalId>
+								<X509Certificate>MIID7DCCAtSgAwIBAgIEALxhTjANBgkqhkiG9w0BAQ0FADBmMQ4wDAYDVQQDEwV1
+												bmhjcjEyMDAGA1UEChMpVW5pdGVkIE5hdGlvbmFsIE9yZ2FuaXphdGlvbiBmb3Ig
+												cmVmdWdlZXMxEzARBgNVBAcTCkNvcGVuaGFnZW4xCzAJBgNVBAYTAkROMB4XDTE5
+												MTIyMzEwNDIxMFoXDTI2MTAyNzEwNDIxMFowZjEOMAwGA1UEAxMFdW5oY3IxMjAw
+												BgNVBAoTKVVuaXRlZCBOYXRpb25hbCBPcmdhbml6YXRpb24gZm9yIHJlZnVnZWVz
+												MRMwEQYDVQQHEwpDb3BlbmhhZ2VuMQswCQYDVQQGEwJETjCCASIwDQYJKoZIhvcN
+												AQEBBQADggEPADCCAQoCggEBAIawN2RCEn8PJzCR6cDzDjBkp6WqacztFKZ5LWrw
+												zb+nunJ/qBJepMPS8EZGQkU0LB586ElnjzXhB7Tp71Cd048/fAijP1FNBEDKkEzq
+												J22Fp18P9Nkkht/R/w40OXT6ow9u/Y1fIPZEb+teuhYd3TDtc5kIu0klTjETAlvi
+												0QUC4J3ME1Dy+pKYaCGPgvg+pAjthmpAml60ankCNxgTznGjTkms5X2HZYUaTzN5
+												Pm/mljD2ky8Tz8yCIcb1JA96HD//iOPTLhCgD1jdEaTcNbd599XGFl2qXbjofcs6
+												FPXAcDx3P7LLVL6K9MopGuORSuRThrwXFa1MDbxkeGAD+VUCAwEAAaOBoTCBnjAf
+												BgNVHSMEGDAWgBT/+KCt2RQruMAqKd0mFr4x7kkbgTAPBgNVHRMECDAGAQH/AgEC
+												MA4GA1UdDwEB/wQEAwIC9DAwBgNVHREEKTAngiV1bmhjci5kYWZpLWRlbW8ubGln
+												aHRlc3QubmxuZXRsYWJzLm5sMAkGA1UdEgQCMAAwHQYDVR0OBBYEFP/4oK3ZFCu4
+												wCop3SYWvjHuSRuBMA0GCSqGSIb3DQEBDQUAA4IBAQAz6M+gLzW4FVzY6XrFO2ya
+												SHr8nsrxqaU5Jl52Lfeo6iFZw5NihmHXzDvcGfqVQ7oYWenBCMJHDqNySKrOZpI8
+												7DAU3oROMJgndZJxccOZ3wzsqh+F6T31GcV2rdFg66ASH9D1Z75QF2TcYznTlrPp
+												ZP2x9+81ohaWLTedbe3Nujx+8VNtkI9ArYcEfXQxSUe0Fv0ruast6ErkPYw516US
+												Pn7FLMEQaCIS7MTG891HIWgrkDnKbDunsauhux3PyWkXHnFSWKPnm7Pyq5vRzpsS
+												GP358U1UNRlirQ8RiMuRmJTFEdZpZMrNoAGZDSYWPc2Yq78suifNTqveg3ZgmRLH</X509Certificate>
+                            </DigitalId>
+                        </ServiceDigitalIdentity>
+                        <ServiceStatus>http://TrustSchemeUNHCRdafi.example.com/ServiceTypes/Servicestatus/granted/</ServiceStatus>
+                        <StatusStartingTime>2019-01-01T00:00:00Z</StatusStartingTime>
+                    </ServiceInformation>
+                </TSPService>
+            </TSPServices>
+        </TrustServiceProvider>
+    </TrustServiceProviderList>
+<ds:Signature xmlns:ds="http://www.w3.org/2000/09/xmldsig#" Id="id-7a6cb172dcc320d204b36126e44f6e0d"><ds:SignedInfo><ds:CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><ds:SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha256"/><ds:Reference Id="r-id-7a6cb172dcc320d204b36126e44f6e0d-1" URI=""><ds:Transforms><ds:Transform Algorithm="http://www.w3.org/TR/1999/REC-xpath-19991116"><ds:XPath>not(ancestor-or-self::ds:Signature)</ds:XPath></ds:Transform><ds:Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></ds:Transforms><ds:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"/><ds:DigestValue>sG//6RNhH+mjxPuE4sFgjjsU5rQvoh8kKOiOVmPlhBg=</ds:DigestValue></ds:Reference><ds:Reference Type="http://uri.etsi.org/01903#SignedProperties" URI="#xades-id-7a6cb172dcc320d204b36126e44f6e0d"><ds:Transforms><ds:Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></ds:Transforms><ds:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"/><ds:DigestValue>slmZbmIeCnTIwOT+luXXmaHprsIQhQhpCqGLCaqoYeQ=</ds:DigestValue></ds:Reference></ds:SignedInfo><ds:SignatureValue Id="value-id-7a6cb172dcc320d204b36126e44f6e0d">fbYFb9uJfmEqlMRPPuwvtKCRBcgMX4eJ6whccKSXYEC/zYLHoOZkM7qnBFT2oqMtDVNq4hs/B8ySN5ugORF1gDoLaZWsoBszybbjzRZXxTwT929m0gEVz1NtYpcJ1al7t/tN6kOiHrtvdAs9sWay0iP7EFbbMgcjXsjhjgnAIPqhgpC1627AL6VjLVeFFfNIQjs1QjhNK856XceSQWUdGr+XcQF3krfU5GbjXqsMLsnTUaQ0eRTK4H0a2do1RntaJwiX40qbqi+viGWmdHt5llCcpieHqp/eXyPobutpG0mbojOyWfc85oyJkfKMOOHwHHHT0VU5epAoVhIPHGMtLQ==</ds:SignatureValue><ds:KeyInfo><ds:X509Data><ds:X509Certificate>MIIEDzCCAvegAwIBAgIEBTl/sTANBgkqhkiG9w0BAQ0FADBmMQ4wDAYDVQQDEwV1bmhjcjEyMDAGA1UEChMpVW5pdGVkIE5hdGlvbmFsIE9yZ2FuaXphdGlvbiBmb3IgcmVmdWdlZXMxEzARBgNVBAcTCkNvcGVuaGFnZW4xCzAJBgNVBAYTAkROMB4XDTIwMDEwOTA5MDkwMVoXDTI2MTExMzA5MDkwMVowZDEMMAoGA1UEAxMDbWVhMTIwMAYDVQQKEylVbml0ZWQgTmF0aW9uYWwgT3JnYW5pemF0aW9uIGZvciByZWZ1Z2VlczETMBEGA1UEBxMKQ29wZW5oYWdlbjELMAkGA1UEBhMCRE4wggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQCIB+VYoqe9r2aFxQMoyuONIXZgO2xnprEnn/RPLikvnAulX/xYMFpcU0SSbopfsdK/XMQiFIFmAO5GjcEqIV+WQ84NlQsTBd+I/VnGwLje4JH9Hc3ppj4xuaBzaX8wiXqoBQtV8Y9LlicRenvaBM29li3CvqLdONOeIUgAH8VF5d3YNmXGWoyIuZv9sruebnrGajjgU2xP0fUdexBx1LbpaafhoSy1KcER0B0PTyofdSR5CV3exwiRUuS48sob/I0IdrJVAPqKmWrosXha+Xj6ejZU473XnPBii6KZlZhOMv0ht29kOixM+5sttswGxP9poraiE1r5yYBC4hV1RcrPAgMBAAGjgcYwgcMwHwYDVR0jBBgwFoAUoI1m4qYD7gRYZQ+sDjyHGqmfRS0wDwYDVR0TBAgwBgEB/wIBAzAOBgNVHQ8BAf8EBAMCArQwLgYDVR0RBCcwJYIjbWVhLmRhZmktZGVtby5saWdodGVzdC5ubG5ldGxhYnMubmwwMAYDVR0SBCkwJ4IldW5oY3IuZGFmaS1kZW1vLmxpZ2h0ZXN0Lm5sbmV0bGFicy5ubDAdBgNVHQ4EFgQUVuBoNVA/fiYn19eI8lLbtea4NCcwDQYJKoZIhvcNAQENBQADggEBAGGLS7+TZGI0pJKg6TOzu5YjDvlaobwKbjpgMWTFvaC1wJJkPZpBXBUmcvef/d4sJjI+6o/4y13LxEeMZGt+7ORJ+D+gvwdZS3KUIRegn77UzIBef/eplwIUBnzNIRV0p2nuMMDQPyzPg+DogvYzoFVZmfXyv5zWsfPwetMTARILKd42QAprGe/3NwhMOTHghE7ejlpfeUFbTCemmxZMZJku4tw1Qzoqd70G64GXahyawigrGK8Up/HXjK3L1Xy8+ED71YGnHIgosoeLGioemzT5lFTKgudefZ41TSaY2sT/CEuc3cCTutVPIiVjDHIaFeI5pa/zsnOJ3a71+T2iXKY=</ds:X509Certificate><ds:X509Certificate>MIID7DCCAtSgAwIBAgIEALxhTjANBgkqhkiG9w0BAQ0FADBmMQ4wDAYDVQQDEwV1bmhjcjEyMDAGA1UEChMpVW5pdGVkIE5hdGlvbmFsIE9yZ2FuaXphdGlvbiBmb3IgcmVmdWdlZXMxEzARBgNVBAcTCkNvcGVuaGFnZW4xCzAJBgNVBAYTAkROMB4XDTIwMDEwOTA5MDkwMVoXDTI2MTExMzA5MDkwMVowZjEOMAwGA1UEAxMFdW5oY3IxMjAwBgNVBAoTKVVuaXRlZCBOYXRpb25hbCBPcmdhbml6YXRpb24gZm9yIHJlZnVnZWVzMRMwEQYDVQQHEwpDb3BlbmhhZ2VuMQswCQYDVQQGEwJETjCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAJLCCpTbuaZtpf/CDwxK70ijUnzaJARx2Oyw0KAS0FXlnF614PO1m2mgCvWYLoOoTAzA4wNPUrkvtRHmblKs5n6dyRDp8d8Yl27gocjPHtTjjUoTe+EwpMWLUSa41n/8AMZ3mLRRQnWk8mZSntQzmiox1fIxV4f8aJqwwXdly1uCfBjbBLotWZ2fFyb/VocUDf6n4DJK2W9gwuxcCd6n8koFwgfH6D2Z54f5LUfkzvJwAZxAzSsb8VuzGVcNbmXvfKuKL94dZ/R7wJG+J28bVWyHLxvYK4q911s+Q88vBw0zOhIIO3hF8tL2n0qrEL+nxRMjM4nMScHWDDy7pwqwcX8CAwEAAaOBoTCBnjAfBgNVHSMEGDAWgBSgjWbipgPuBFhlD6wOPIcaqZ9FLTAPBgNVHRMECDAGAQH/AgEDMA4GA1UdDwEB/wQEAwICtDAwBgNVHREEKTAngiV1bmhjci5kYWZpLWRlbW8ubGlnaHRlc3QubmxuZXRsYWJzLm5sMAkGA1UdEgQCMAAwHQYDVR0OBBYEFKCNZuKmA+4EWGUPrA48hxqpn0UtMA0GCSqGSIb3DQEBDQUAA4IBAQAm0i8U88wODD0rThZVCFVtLs8oGwXvulrhpIPeduVTI0Z+7/vblBYrAJp8IsGTk/VmLfi31oY+o1Q+qJq1giuQlyRwuCkGoQgDdzSzbcUpm4l3GRIzDDHsK54OqMxXHuZyvT+3eJwrx+tN7TDn+Rf94J8d0bs4Hy30GoVmNe4nEdPUuMtVPL54//X/Mkr56Ul2+qtv9D8nPSD+chHEAUizlt0yfGsSq+f3hc63DXZIqh2E9YgZqKIrmRfQXF6Nb4D9QrK0pmz0NJ6umcvfBIbEYz1VSNdUfHw7C9zfc5VUan9+PKXxft3kQXylN8ZeInmhwu4sMTr/zRQL0C6BtNMx</ds:X509Certificate></ds:X509Data></ds:KeyInfo><ds:Object><xades:QualifyingProperties xmlns:xades="http://uri.etsi.org/01903/v1.3.2#" Target="#id-7a6cb172dcc320d204b36126e44f6e0d"><xades:SignedProperties Id="xades-id-7a6cb172dcc320d204b36126e44f6e0d"><xades:SignedSignatureProperties><xades:SigningTime>2020-01-09T09:30:01Z</xades:SigningTime><xades:SigningCertificateV2><xades:Cert><xades:CertDigest><ds:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><ds:DigestValue>ymVoXO0PrR/LmwnezjaI3DVwK6Vj7LxpQ7ZHqnieMUujW78lKhThZg2LD01+BQ5EDoHvTrw+zZJUNE7/sG60Hw==</ds:DigestValue></xades:CertDigest><xades:IssuerSerialV2>MHIwaqRoMGYxDjAMBgNVBAMTBXVuaGNyMTIwMAYDVQQKEylVbml0ZWQgTmF0aW9uYWwgT3JnYW5pemF0aW9uIGZvciByZWZ1Z2VlczETMBEGA1UEBxMKQ29wZW5oYWdlbjELMAkGA1UEBhMCRE4CBAU5f7E=</xades:IssuerSerialV2></xades:Cert></xades:SigningCertificateV2><xades:SignaturePolicyIdentifier><xades:SignaturePolicyImplied/></xades:SignaturePolicyIdentifier><xades:SignatureProductionPlaceV2/></xades:SignedSignatureProperties><xades:SignedDataObjectProperties><xades:DataObjectFormat ObjectReference="#r-id-7a6cb172dcc320d204b36126e44f6e0d-1"><xades:MimeType>text/xml</xades:MimeType></xades:DataObjectFormat></xades:SignedDataObjectProperties></xades:SignedProperties></xades:QualifyingProperties></ds:Object></ds:Signature></TrustServiceStatusList>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<form format="theAuctionHouse2019">
+
+    <person>
+        <name>John Doe</name>
+        <street>Dartmouth St.</street>
+        <city>Midfarthington</city>
+        <country>England</country>
+    </person>
+
+    <lot_number>54678</lot_number>
+    <bid>60</bid>
+
+</form>

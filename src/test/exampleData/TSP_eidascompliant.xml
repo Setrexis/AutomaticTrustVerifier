@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?><TrustServiceStatusList xmlns="http://uri.etsi.org/02231/v2#" xmlns:ns2="http://www.w3.org/2000/09/xmldsig#" xmlns:ns3="http://uri.etsi.org/01903/v1.3.2#" xmlns:ns4="http://uri.etsi.org/02231/v2/additionaltypes#" xmlns:ns5="http://uri.etsi.org/TrstSvc/SvcInfoExt/eSigDir-1999-93-EC-TrustedList/#" xmlns:ns6="http://uri.etsi.org/01903/v1.4.1#" TSLTag="http://uri.etsi.org/19612/TSLTag">
+    <SchemeInformation>
+        <TSLVersionIdentifier>5</TSLVersionIdentifier>
+        <TSLSequenceNumber>1</TSLSequenceNumber>
+        <TSLType>http://uri.etsi.org/TrstSvc/TrustedList/TSLType/EUgeneric</TSLType>
+        <SchemeOperatorName>
+            <Name xml:lang="en">Alice</Name>
+        </SchemeOperatorName>
+        <SchemeOperatorAddress>
+            <PostalAddresses>
+                <PostalAddress xml:lang="en">
+                    <StreetAddress>Alice Street 1</StreetAddress>
+                    <Locality>Alice Town</Locality>
+                    <PostalCode>111111</PostalCode>
+                    <CountryName>Alice Land</CountryName>
+                </PostalAddress>
+            </PostalAddresses>
+            <ElectronicAddress>
+                <URI xml:lang="en">mailto:alice@TrustSchemeAlice.example.com</URI>
+                <URI xml:lang="en">https://TrustSchemeAlice.example.com/Servicemenu/English</URI>
+            </ElectronicAddress>
+        </SchemeOperatorAddress>
+        <SchemeName>
+            <Name xml:lang="en"> Trust Scheme Alice: Trusted list including information related to the qualified trust service providers which are supervised by Alice.</Name>
+        </SchemeName>
+        <SchemeInformationURI>
+            <URI xml:lang="en">https://TrustSchemeAlice.example.com/en/tsl_e.htm</URI>
+        </SchemeInformationURI>
+        <StatusDeterminationApproach>http://uri.etsi.org/TrstSvc/TrustedList/StatusDetn/EUappropriate</StatusDeterminationApproach>
+        <SchemeTypeCommunityRules>
+            <URI xml:lang="en">http://uri.etsi.org/TrstSvc/TrustedList/schemerules/EUcommon</URI>
+        </SchemeTypeCommunityRules>
+        <SchemeTerritory>Alice Land</SchemeTerritory>
+        <PolicyOrLegalNotice>
+            <TSLLegalNotice xml:lang="en">The applicable legal framework for the present trusted list is Regulation (EU) No 910/2014 of the European Parliament and of the Council of 23 July 2014 on electronic identification and trust services for electronic transactions in the internal market and repealing Directive 1999/93/EC.</TSLLegalNotice>
+        </PolicyOrLegalNotice>
+        <HistoricalInformationPeriod>65535</HistoricalInformationPeriod>
+        <ListIssueDateTime>2018-01-01T11:11:11Z</ListIssueDateTime>
+        <NextUpdate>
+            <dateTime>2020-01-01T11:11:11Z</dateTime>
+        </NextUpdate>
+        <DistributionPoints>
+            <URI>https://TrustSchemeAlice.example.com/trust-list.xml</URI>
+        </DistributionPoints>
+    </SchemeInformation>
+    <TrustServiceProviderList>
+        <TrustServiceProvider>
+            <TSPInformation>
+                <TSPName>
+                    <Name xml:lang="en">Bob The-Trust GmbH</Name>
+                </TSPName>
+                <TSPTradeName>
+                    <Name xml:lang="en">VAT-11111111</Name>
+                </TSPTradeName>
+                <TSPAddress>
+                    <PostalAddresses>
+                        <PostalAddress xml:lang="en">
+                            <StreetAddress>Bob Street 1</StreetAddress>
+                            <Locality>Bob Town</Locality>
+                            <PostalCode>111111</PostalCode>
+                            <CountryName>Bob Land</CountryName>
+                        </PostalAddress>
+                    </PostalAddresses>
+                    <ElectronicAddress>
+                        <URI xml:lang="en">https://www.Bob-the-trust.example.com/en/</URI>
+						<URI xml:lang="en">mailto:info@Bob-the-trust.example.com</URI>
+                    </ElectronicAddress>
+                </TSPAddress>
+                <TSPInformationURI>
+                    <URI xml:lang="en">https://www.Bob-the-trust.example.com/en/info/eTimestamp-compliant-with-eidas/</URI>
+                </TSPInformationURI>
+            </TSPInformation>
+            <TSPServices>
+                <TSPService>
+                    <ServiceInformation>
+                        <ServiceTypeIdentifier>http://uri.etsi.org/TrstSvc/Svctype/TSA/QTST</ServiceTypeIdentifier>
+                        <ServiceName>
+                            <Name xml:lang="en">Bob The-Trust GmbH qualified electronic time stamp</Name>
+                        </ServiceName>
+                        <ServiceDigitalIdentity>
+                            <DigitalId>
+								<X509Certificate>ABCDEFGH0123456789</X509Certificate>
+                            </DigitalId>
+                        </ServiceDigitalIdentity>
+                        <ServiceStatus>http://uri.etsi.org/TrstSvc/TrustedList/Svcstatus/granted/</ServiceStatus>
+                        <StatusStartingTime>2018-01-01T11:11:11Z</StatusStartingTime>
+                    </ServiceInformation>
+                </TSPService>
+            </TSPServices>
+        </TrustServiceProvider>
+    </TrustServiceProviderList>
+	<dsig:Signature Id="Signature-111111">
+		<dsig:SignedInfo Id="SignedInfo-111111">
+			<dsig:CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/>
+			<dsig:SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha256"/>
+			<dsig:Reference Id="Reference-111111" URI="">
+				<dsig:Transforms>
+					<dsig:Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/>
+					<dsig:Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/>
+				</dsig:Transforms>
+				<dsig:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"/>
+				<dsig:DigestValue>ABCDEFGH0123456789</dsig:DigestValue>
+			</dsig:Reference>
+			<dsig:Reference Id="Reference-111111" Type="http://uri.etsi.org/01903#SignedProperties" URI="#SignedProperties-111111">
+				<dsig:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"/>
+				<dsig:DigestValue>BCDEFGHI0123456789</dsig:DigestValue>
+			</dsig:Reference>
+		</dsig:SignedInfo>
+		<dsig:SignatureValue Id="SignatureValue-111111">
+			CDEFGHIJ0123456789
+		</dsig:SignatureValue>
+		<dsig:KeyInfo>
+			<dsig:X509Data>
+				<dsig:X509Certificate>
+					DEFGHIJK0123456789
+				</dsig:X509Certificate>
+			</dsig:X509Data>
+		</dsig:KeyInfo>
+		<dsig:Object Id="Object-111111">
+			<xades:QualifyingProperties Target="#Signature-111111">
+				<xades:SignedProperties Id="SignedProperties-111111">
+					<xades:SignedSignatureProperties>
+						<xades:SigningTime>2019-01-01T11:11:11Z</xades:SigningTime>
+						<xades:SigningCertificate>
+							<xades:Cert>
+								<xades:CertDigest>
+									<dsig:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"/>
+									<dsig:DigestValue>EFGHIJKL0123456789</dsig:DigestValue>
+								</xades:CertDigest>
+								<xades:IssuerSerial>
+									<dsig:X509IssuerName>
+										CN=Alice ,L=Alice Town,C=Alice Land
+									</dsig:X509IssuerName>
+									<dsig:X509SerialNumber>111111</dsig:X509SerialNumber>
+								</xades:IssuerSerial>
+							</xades:Cert>
+						</xades:SigningCertificate>
+						<xades:SignaturePolicyIdentifier>
+							<xades:SignaturePolicyImplied/>
+						</xades:SignaturePolicyIdentifier>
+					</xades:SignedSignatureProperties>
+					<xades:SignedDataObjectProperties>
+						<xades:DataObjectFormat ObjectReference="#Reference-111111">
+							<xades:MimeType>text/xml</xades:MimeType>
+						</xades:DataObjectFormat>
+					</xades:SignedDataObjectProperties>
+				</xades:SignedProperties>
+			</xades:QualifyingProperties>
+		</dsig:Object>
+	</dsig:Signature>
+</TrustServiceStatusList>
