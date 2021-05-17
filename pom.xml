@@ -4,7 +4,7 @@
 
     <groupId>eu.lightest</groupId>
     <artifactId>atv</artifactId>
-    <version>1.9.6.1</version>
+    <version>1.9.6.2</version>
     <packaging>jar</packaging>
 
     <name>LIGHTest Automated Trust Verifier</name>
@@ -223,12 +223,12 @@
         <dependency>
             <groupId>eu.lightest</groupId>
             <artifactId>horn</artifactId>
-            <version>1.9</version>
+            <version>1.9.1</version>
         </dependency>
         <dependency>
             <groupId>eu.lightest</groupId>
-            <artifactId>DelegationAPI</artifactId>
-            <version>1.0.6</version>
+            <artifactId>delegationapi</artifactId>
+            <version>1.0.7</version>
         </dependency>
 
         <dependency>
