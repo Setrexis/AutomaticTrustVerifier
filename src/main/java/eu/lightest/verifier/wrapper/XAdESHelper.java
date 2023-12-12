@@ -15,7 +15,7 @@ import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 import org.xml.sax.InputSource;
 import org.xml.sax.SAXException;
-import sun.security.x509.X509CertImpl;
+//import sun.security.x509.X509CertImpl;
 
 import javax.xml.crypto.MarshalException;
 import javax.xml.crypto.XMLStructure;
@@ -312,9 +312,9 @@ public class XAdESHelper extends AdvancedDocHelper {
         
         if(!(o instanceof X509Certificate)) {
             XAdESHelper.logger.warn("Not " + X509Certificate.class.getName() + ", but " + o.getClass().getName());
-            if(o instanceof X509CertImpl) {
+            /*if(o instanceof X509CertImpl) {
                 XAdESHelper.logger.error("This might happen if IAIK JCE is not the first provider ...");
-            }
+            }*/
         }
         
         try {

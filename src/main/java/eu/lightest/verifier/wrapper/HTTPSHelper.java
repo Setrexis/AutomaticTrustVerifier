@@ -26,13 +26,14 @@ public class HTTPSHelper {
         Security.setProperty("keystore.type", "jks");
     
         this.builder = new OkHttpClient().newBuilder()
+                .dns(new GNSHelper())
                 .callTimeout(HTTPSHelper.TIMEOUT, TimeUnit.SECONDS)
                 .connectTimeout(HTTPSHelper.TIMEOUT, TimeUnit.SECONDS)
                 .readTimeout(HTTPSHelper.TIMEOUT, TimeUnit.SECONDS)
                 .writeTimeout(HTTPSHelper.TIMEOUT, TimeUnit.SECONDS)
                 .followRedirects(false) // DANETrustManager does not support redirects right now
                 .followSslRedirects(true)
-                .connectionSpecs(Arrays.asList(ConnectionSpec.MODERN_TLS, ConnectionSpec.RESTRICTED_TLS));
+                .connectionSpecs(Arrays.asList(ConnectionSpec.MODERN_TLS, ConnectionSpec.RESTRICTED_TLS, ConnectionSpec.CLEARTEXT));
     
         rebuildClient();
 
@@ -144,6 +145,7 @@ public class HTTPSHelper {
         Request request = new Request.Builder()
                 .get()
                 .url(url)
+                .addHeader("Accept", "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7")
                 .build();
         
         return this.doRequest(request);

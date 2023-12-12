@@ -9,7 +9,7 @@ import static org.junit.Assert.assertTrue;
 public class TSPAHelperTest {
     
     //private static final String TSPA = "https://lightest-dev.iaik.tugraz.at/tspa/api/v1/";
-    private static final String TSPA = "https://tspa.tug.do.nlnetlabs.nl/tspa/api/v1/";
+    private static final String TSPA = "http://localhost:8080/tspa/api/v1/";
     private static Logger logger = Logger.getLogger(TSPAHelperTest.class);
     
     @Test
@@ -101,7 +101,7 @@ public class TSPAHelperTest {
     public static class SCHEME_EIDAS extends SCHEME {
         
         public SCHEME_EIDAS() {
-            super("https://ec.europa.eu/information_society/policy/esignature/trusted-list/tl-mp.xml",
+            super("https://ec.europa.eu/tools/lotl/eu-lotl.xml",
                     "test-scheme.lightest.nlnetlabs.nl",
                     "eidas.lightest.nlnetlabs.nl");
         }

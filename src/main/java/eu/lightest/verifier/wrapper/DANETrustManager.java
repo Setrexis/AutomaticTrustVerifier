@@ -20,12 +20,12 @@ public class DANETrustManager implements X509TrustManager {
     
     private X509TrustManager wrappedManager = null;
     private String host;
-    private DNSHelper dnsHelper;
+    private NameResolverHelper dnsHelper;
     private List<TLSARecord> tlsaRecords;
     
     public DANETrustManager(X509TrustManager managerToWrap) throws IOException {
         this.wrappedManager = managerToWrap;
-        this.dnsHelper = new DNSHelper();
+        this.dnsHelper = new GNSHelper();
         
     }
     

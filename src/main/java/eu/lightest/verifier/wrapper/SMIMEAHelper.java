@@ -27,7 +27,7 @@ public class SMIMEAHelper {
      * @throws IOException
      */
     public static boolean verifyXMLdocument(String hostname, String document) throws IOException {
-        DNSHelper dns = new DNSHelper();
+        NameResolverHelper dns = new GNSHelper();
         
         List<SMIMEAcert> smimeas = null;
         try {

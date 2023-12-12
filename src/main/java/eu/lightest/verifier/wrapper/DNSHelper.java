@@ -5,13 +5,14 @@ import eu.lightest.verifier.exceptions.DNSException;
 import org.apache.log4j.Logger;
 import org.jitsi.dnssec.validator.ValidatingResolver;
 import org.xbill.DNS.*;
+import org.xbill.DNS.Record;
 
 import java.io.*;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
-public class DNSHelper {
+public class DNSHelper implements NameResolverHelper{
     
     public static final String DNS_GOOGLE1 = "8.8.8.8"; // https://developers.google.com/speed/public-dns/
     public static final String DNS_GOOGLE2 = "8.8.4.4"; // https://developers.google.com/speed/public-dns/
@@ -24,13 +25,6 @@ public class DNSHelper {
     public static final String DNS_CISCO = "171.70.168.183";
     public static final String DNS_EDIS = "151.236.4.166";
     public static final String CNS_CCC = "213.73.91.35";
-    public static final int RECORD_A = Type.A;
-    public static final int RECORD_CNAME = Type.CNAME;
-    public static final int RECORD_URI = Type.URI;
-    public static final int RECORD_PTR = Type.PTR;
-    public static final int RECORD_TXT = Type.TXT;
-    public static final int RECORD_TLSA = Type.TLSA;
-    public static final int RECORD_SMIMEA = Type.SMIMEA;
     private final static String ROOT_PATH = ATVConfiguration.get().getString("dnssec_root_key");
     //private final static String ROOT_PATH2 = "/var/lib/unbound/root.key";
     
@@ -218,7 +212,7 @@ public class DNSHelper {
         
         return response;
     }
-    
+
     public <R extends Record> List<R> queryAndParse(String host, Class recordTypeClass, int recordTypeID) throws IOException, DNSException {
         
         List<R> list = new ArrayList<R>();

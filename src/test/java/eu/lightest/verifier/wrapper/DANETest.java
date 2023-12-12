@@ -62,7 +62,7 @@ public class DANETest extends HTTPSHelperTest {
     public void badsigTest() throws IOException, DNSException {
         // The TLSA record has an incorrect DNSSEC signature.
         
-        DNSHelper dnsHelper = new DNSHelper();
+        NameResolverHelper dnsHelper = new GNSHelper();
         dnsHelper.queryAndParse("_443._tcp.badsig.busted.huque.com", TLSARecord.class, DNSHelper.RECORD_TLSA);
         //dnsHelper.query("_443._tcp.badsig.busted.huque.com", DNSHelper.RECORD_TLSA);
         
@@ -74,7 +74,7 @@ public class DANETest extends HTTPSHelperTest {
     public void expiredsigTest() throws IOException, DNSException {
         // The TLSA record has an expired DNSSEC signature.
         
-        DNSHelper dnsHelper = new DNSHelper();
+        NameResolverHelper dnsHelper = new GNSHelper();
         dnsHelper.queryAndParse("_443._tcp.expiredsig.busted.huque.com", TLSARecord.class, DNSHelper.RECORD_TLSA);
         //dnsHelper.query("_443._tcp.expiredsig.busted.huque.com", DNSHelper.RECORD_TLSA);
         

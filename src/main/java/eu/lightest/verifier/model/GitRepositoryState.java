@@ -30,17 +30,17 @@ public class GitRepositoryState {
 //        this.buildUserEmail = String.valueOf(properties.get("git.build.user.email"));
 //        this.buildTime = String.valueOf(properties.get("git.build.time"));
 //        this.buildHost = String.valueOf(properties.get("git.build.host"));
-        this.buildVersion = String.valueOf(properties.get("git.build.version"));
+        this.buildVersion = "1.0.1";//String.valueOf(properties.get("git.build.version"));
 //        this.buildNumber = String.valueOf(properties.get("git.build.number"));
 //        this.buildNumberUnique = String.valueOf(properties.get("git.build.number.unique"));
     }
     
     public static GitRepositoryState get() throws IOException {
         if(GitRepositoryState.gitRepositoryState == null) {
-            Properties properties = new Properties();
-            properties.load(GitRepositoryState.class.getClassLoader().getResourceAsStream("git.properties"));
+            //Properties properties = new Properties();
+            //properties.load(GitRepositoryState.class.getClassLoader().getResourceAsStream("git.properties"));
             
-            GitRepositoryState.gitRepositoryState = new GitRepositoryState(properties);
+            GitRepositoryState.gitRepositoryState = new GitRepositoryState(null);
         }
         return GitRepositoryState.gitRepositoryState;
     }

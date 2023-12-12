@@ -6,6 +6,7 @@ import eu.lightest.verifier.model.report.Report;
 import eu.lightest.verifier.model.report.ReportStatus;
 import org.apache.log4j.Logger;
 
+import javax.naming.Name;
 import java.io.IOException;
 import java.net.URL;
 import java.util.List;
@@ -13,11 +14,11 @@ import java.util.List;
 public class TrustDiscoveryWrapper {
     
     private static Logger logger = Logger.getLogger(TrustDiscoveryWrapper.class);
-    private static DNSHelper dns;
+    private static NameResolverHelper dns;
     
     private static void init() throws IOException {
         if(TrustDiscoveryWrapper.dns == null) {
-            TrustDiscoveryWrapper.dns = new DNSHelper();
+            TrustDiscoveryWrapper.dns = new GNSHelper();
         }
     }
     

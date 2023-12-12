@@ -3,7 +3,6 @@ package eu.lightest.verifier.model.delegation;
 import eu.lightest.delegation.api.model.xsd.DelegationType;
 import eu.lightest.delegation.api.model.xsd.ValidityType;
 import org.apache.log4j.Logger;
-import sun.reflect.generics.reflectiveObjects.NotImplementedException;
 
 import javax.xml.datatype.XMLGregorianCalendar;
 import java.util.Calendar;
@@ -18,8 +17,8 @@ public class Delegation {
         this.mDelegationType = dt;
     }
     
-    public boolean isDelegationSignatureValid() {
-        throw new NotImplementedException();
+    public boolean isDelegationSignatureValid() throws Exception {
+        throw new Exception("Not implemented yet!");
     }
     
     public boolean isNotBeforeDateValid() {
@@ -57,8 +56,8 @@ public class Delegation {
         return DelegationTypeE.Bilateral;
     }
     
-    public boolean isDelegationRevoked() {
-        throw new NotImplementedException();
+    public boolean isDelegationRevoked() throws Exception {
+        throw new Exception("Not implemented yet!");
     }
     
     private int compareCal(XMLGregorianCalendar gc, Date date) {

@@ -4,9 +4,7 @@ import eu.lightest.verifier.ATVConfiguration;
 import eu.lightest.verifier.exceptions.DNSException;
 import eu.lightest.verifier.model.report.Report;
 import eu.lightest.verifier.model.report.ReportStatus;
-import eu.lightest.verifier.wrapper.DNSHelper;
-import eu.lightest.verifier.wrapper.HTTPSHelper;
-import eu.lightest.verifier.wrapper.SMIMEAHelper;
+import eu.lightest.verifier.wrapper.*;
 import org.apache.log4j.Logger;
 
 import java.io.IOException;
@@ -17,11 +15,11 @@ public class TrustSchemeFactory {
     
     public static final String CLAIM_PREFIX = "_scheme._trust";
     private static Logger logger = Logger.getLogger(TrustSchemeFactory.class);
-    private static DNSHelper dns;
+    private static NameResolverHelper dns;
     
     
     public static TrustScheme createTrustScheme(TrustSchemeClaim claim, Report report) throws IOException, DNSException {
-        TrustSchemeFactory.dns = new DNSHelper();
+        TrustSchemeFactory.dns = new GNSHelper();
     
         String schemeHostname = TrustSchemeFactory.discoverTrustScheme(claim, report);
     
