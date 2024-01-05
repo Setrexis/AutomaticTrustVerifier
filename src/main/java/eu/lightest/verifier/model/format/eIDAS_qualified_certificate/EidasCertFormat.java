@@ -657,8 +657,8 @@ public class EidasCertFormat extends AbstractFormatParser {
                     ttaScheme = trustedSchemeHost;
                 }
         
-                ttaHost = TrustTranslationFactory.POINTER_PREFIX + "." + ttaScheme + "." + "lightest.nlnetlabs.nl";
-                this.report.addLine("Using TTA at " + ttaScheme + "." + "lightest.nlnetlabs.nl");
+                ttaHost = TrustTranslationFactory.POINTER_PREFIX + "." + ttaScheme; //+ "." + "lightest.nlnetlabs.nl";
+                this.report.addLine("Using TTA at " + ttaScheme ); //+ "." + "lightest.nlnetlabs.nl");
                 
                 // step 3: build path for resolveObj
                 pathToTTADomain.add(EidasCertFormat.PATH_TRANSLATION);

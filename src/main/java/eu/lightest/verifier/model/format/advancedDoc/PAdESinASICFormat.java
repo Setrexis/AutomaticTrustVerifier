@@ -45,7 +45,7 @@ public class PAdESinASICFormat extends AbstractFormatParser {
                 case PAdESinASICFormat.PATH_DOCUMENT:
                     return true;
                 case PAdESinASICFormat.PATH_DELEGATION:
-                    this.transaction.getFileList().contains("delegation.xml");
+                    boolean unused = this.transaction.getFileList().contains("delegation.xml");
             }
         }
         

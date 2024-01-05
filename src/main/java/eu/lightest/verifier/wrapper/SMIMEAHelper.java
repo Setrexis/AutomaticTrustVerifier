@@ -42,7 +42,7 @@ public class SMIMEAHelper {
         
         if(numCerts <= 0) {
             SMIMEAHelper.logger.error("Found no SMIMEA records.");
-            return false;
+            return false; // TODO set to true to work with localhost test setup
             
         } else { // numCerts > 0
             // tracking: https://extgit.iaik.tugraz.at/LIGHTest/AutomaticTrustVerifier/issues/3
